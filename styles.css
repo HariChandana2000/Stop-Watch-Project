@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 8rem;
+  font-weight: 700;
+  text-shadow: 2px 2px #f8a5c2;
+  color: #f92672;
+  width: 100%;
+  text-align: center;
+  margin: 40px;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+  gap: 1rem;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: #f92672;
+  color: white;
+  cursor: pointer;
+  padding: 1.5rem 4rem;
+  border-radius: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
+}
+
+button:hover {
+  background-color: rgb(249, 38, 114, 0.8);
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+button[disabled] {
+  opacity: 0.5;
+  cursor: default;
+}
+
+#history {
+  margin: 40px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #f8a5c2;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #f8a5c2;
+}
+
+a:hover {
+  color: rgb(249, 38, 114, 0.8);
+}
+
+p {
+  color: #f8a5c2;
+}
+
+@media screen and (max-width: 470px) {
+  button {
+    outline: none;
+    border: none;
+    background-color: #f92672;
+    color: white;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s;
+  }
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 2px 2px #f8a5c2;
+    color: #f92672;
+    width: 100%;
+    text-align: center;
+    margin: 40px;
+  }
+}
+
+@media screen and (min-width: 471px) and (max-width: 660px) {
+  button {
+    outline: none;
+    border: none;
+    background-color: #f92672;
+    color: white;
+    cursor: pointer;
+    padding: 1.3rem 2rem;
+    border-radius: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s;
+  }
+
+  h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px #f8a5c2;
+    color: #f92672;
+    width: 100%;
+    text-align: center;
+    margin: 40px;
+  }
+}
